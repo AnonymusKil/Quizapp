@@ -9,7 +9,7 @@ import questionRoute from "./routes/questionRoute.js";
 const app = express();
 const port = process.env.PORT || 3000; 
 app.use(cors({
-    origin: "https://quiz-app-frontend-two-xi.vercel.app/",
+    origin: "*",
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true 
